@@ -24,8 +24,8 @@ func Init() {
 
 // 启动服务器。
 func Start() {
-	log.Println("正在启动服务器...")
-	defer log.Println("启动完成.")
+	log.Println("启动服务器中...")
 
-	// TODO: 完成启动服务器相关的代码
+	// 尝试开始监听
+	start_listening()
 }
