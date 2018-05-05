@@ -6,7 +6,7 @@ import (
 )
 
 // 配置文件路径。
-const PATH_FILE_CONFIG = "config.toml"
+const PathFileConfig = "config.toml"
 
 // 所有的配置对象将作为全局变量存储在此处，可使用 LoadConfig() 方法以从配置文件中加载数据。
 var ServerCfg = ServerConfig{}
@@ -17,12 +17,12 @@ var ServerCfg = ServerConfig{}
 // 注意：若载入失败，将会触发 panic 而终止程序运行。
 func LoadConfig() {
 	// 错误信息常量
-	const panic_info = "从配置文件 %s 中读取配置 %s 时发生严重错误。"
+	const msgPanic = "从配置文件 %s 中读取配置 %s 时发生严重错误。"
 
 	// ServerConfig 的读取
-	_, err := toml.DecodeFile(PATH_FILE_CONFIG, &ServerCfg)
+	_, err := toml.DecodeFile(PathFileConfig, &ServerCfg)
 	if err != nil {
-		log.Panicf(panic_info, PATH_FILE_CONFIG, "ServerConfig")
+		log.Panicf(msgPanic, PathFileConfig, "ServerConfig")
 	}
 
 	// TODO: 添加更多配置的读取

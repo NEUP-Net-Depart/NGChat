@@ -7,7 +7,7 @@ import (
 )
 
 // 处理连接。
-func handle_connection(conn net.Conn) {
+func handleConnection(conn net.Conn) {
 	// TODO: 实现连接的处理
 
 	// NOTE: 下面的代码仅供测试使用！
