@@ -1,0 +1,7 @@
+# 配置文件（开发样例）。
+
+# 服务器配置
+go_maxprocs = 4                 # 参见 Golang GOMAXPROCS。
+listen_addr = "0.0.0.0:23456"   # 监听地址。
+
+# TODO: 加入更多的配置项目
