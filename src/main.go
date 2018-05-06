@@ -1,7 +1,7 @@
 package main
 
 import (
-	"NGChat/server"
+	"server"
 )
 
 // 主函数。

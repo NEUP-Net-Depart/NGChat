@@ -2,7 +2,7 @@ package server
 
 import (
 	"runtime"
-	"NGChat/config"
+	"config"
 	"log"
 )
 

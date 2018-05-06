@@ -2,7 +2,7 @@ package server
 
 import (
 	"net"
-	"NGChat/config"
+	"config"
 	"log"
 )
 
