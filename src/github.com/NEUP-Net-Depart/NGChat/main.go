@@ -1,7 +1,7 @@
 package main
 
 import (
-	"server"
+	"github.com/NEUP-Net-Depart/NGChat/server"
 )
 
 // 主函数。

@@ -2,7 +2,7 @@ package server
 
 import (
 	"runtime"
-	"config"
+	"github.com/NEUP-Net-Depart/NGChat/config"
 	"log"
 )
 
